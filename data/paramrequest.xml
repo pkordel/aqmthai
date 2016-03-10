@@ -1,0 +1,24 @@
+curl --data "stationId=36t&action=getParamList" http://aqmthai.com/includes/getManReport.php
+
+<xml>
+  <latestTablePdata>No data this table</latestTablePdata>
+  <select id="selectParameter">
+  <option value="CO" selected="">CO</option>
+  <option value="NO" selected="">NO</option>
+  <option value="NOX" selected="">NOX</option>
+  <option value="NO2" selected="">NO2</option>
+  <option value="SO2" selected="">SO2</option>
+  <option value="O3" selected="">O3</option>
+  <option value="PM10" selected="">PM10</option>
+  <option value="TEMP" selected="">TEMP</option>
+  <option value="RH" selected="">RH</option>
+  <option value="SRAD" selected="">SRAD</option>
+  <option value="NRAD" selected="">NRAD</option>
+  <option value="BP" selected="">BP</option>
+  <option value="WS" selected="">WS</option>
+  <option value="RAIN" selected="">RAIN</option>
+  <option value="WD" selected="">WD</option>
+  <option value="PM2.5" selected="">PM2.5</option>
+  </select>
+  <ReadTiming>1</ReadTiming>
+</xml>

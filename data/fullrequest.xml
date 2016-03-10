@@ -1,0 +1,48 @@
+var paramLength = document.getElementById("manualReportForm").parameterSelected.length;
+1
+var endDate = document.getElementById("manualReportForm").endDate.value;
+2016-03-10
+var startDate = document.getElementById("manualReportForm").startDate.value;
+2016-03-09
+var startHour = document.getElementById("manualReportForm").startHour.value;
+00
+var startMin = document.getElementById("manualReportForm").startMin.value;
+00
+var startSec = document.getElementById("manualReportForm").startSec.value;
+00
+var endHour = document.getElementById("manualReportForm").endHour.value;
+00
+var endMin = document.getElementById("manualReportForm").endMin.value;
+00
+var endSec = document.getElementById("manualReportForm").endSec.value;
+00
+var stationId = document.getElementById("manualReportForm").stationId.length;
+36t
+var reportType = document.getElementById("manualReportForm").reportType.value;
+Raw
+var startYearMn = document.getElementById("manualReportForm").startYearMn.value;
+2016
+var startMonthMn = document.getElementById("manualReportForm").startMonthMn.value;
+03
+var endYearMn = document.getElementById("manualReportForm").endYearMn.value;
+2016
+var endMonthMn= document.getElementById("manualReportForm").endMonthMn.value;
+03
+var showNumRow = document.getElementById("manualReportForm").showNumRow.value;
+100
+var pageNo = document.getElementById("manualReportForm").pageNo.value;
+1
+
+
+action +
+
+&paramValue=PM2.5&endDate=2016-03-10&startDate=2016-03-09&stationId=36t&reportType=Raw&startTime=00:00:00&endTime=00:00:00&&showNumRow=100&pageNo=1
+
+action="+action+"&paramValue="+paramValue+"&endDate="+endDate+"&startDate="+startDate+"&stationId="+
+      stationIdValue+"&reportType="+reportType+"&startYearMn="+startYearMn+"&startMonthMn="+startMonthMn+"&endYearMn="+endYearMn+"&endMonthMn="+endMonthMn+
+    "&startTime="+startHour+":"+startMin+":"+startSec+"&endTime="+endHour+":"+endMin+":"+endSec+"&dataReportType="+dataReportType+"&showNumRow="+showNumRow+"&pageNo="+pageNo;
+  params = params+"&startDateTimeCurrPage="+startDateTimeCurrPage+"&endDateTimeCurrPage="+endDateTimeCurrPage;
+
+
+
+  curl --data "action=showTable&paramValue=PM2.5%%&endDate=2016-03-10&startDate=2016-03-09&stationId=36t%%&reportType=Raw&startTime=00:00:00&endTime=00:00:00&&showNumRow=100&pageNo=1" http://aqmthai.com/includes/getMultiManReport.php
