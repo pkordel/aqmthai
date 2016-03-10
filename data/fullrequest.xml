@@ -46,3 +46,6 @@ action="+action+"&paramValue="+paramValue+"&endDate="+endDate+"&startDate="+star
 
 
   curl --data "action=showTable&paramValue=PM2.5%%&endDate=2016-03-10&startDate=2016-03-09&stationId=36t%%&reportType=Raw&startTime=00:00:00&endTime=00:00:00&&showNumRow=100&pageNo=1" http://aqmthai.com/includes/getMultiManReport.php
+
+
+  curl "http://aqmthai.com/public_report.php?lang=en&stationId=36t&show_graph=0&bt_show_table=Table&show_graph=1&reportType=Raw&showNumRow=100&graphType=AnnotatedTimeLine&startYearMn=2016&startMonthMn=03&startHour=00&startMin=00&startSec=00&endYearMn=2016&endMonthMn=03&endHour=00&endMin=00&endSec=00&pageNo=1&parameterSelected=PM2.5&datepicker_start=2016-03-09&datepicker_end=2016-03-10"
