@@ -1,0 +1,209 @@
+body
+    {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 11px;
+	scrollbar-face-color:#fffffd;
+	scrollbar-highlight-color:#fffffd;
+	scrollbar-3dlight-color:#ebedef;
+	scrollbar-darkshadow-color:#ebedef;
+	scrollbar-shadow-color:#e6e3d1;
+	scrollbar-arrow-color:#ced1de;
+	scrollbar-track-color:#dddbd3;
+	text-decoration: none;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;}
+.bgleft01 {
+}
+.NormalText {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+}
+.Normalhead {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+}
+.NormalText_TH {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	text-decoration: none;
+	color: #022c4d;
+}
+.bgleft01 {
+	background-color: #C8F7FF;
+	background-image: url(../images/imgespcd06_l.jpg);
+	background-position: right top;
+}
+.bgleft02 {
+	background-color: #C8F7FF;
+	background-image: url(../images/imgespcd09_l.jpg);
+	background-position: right bottom;
+	background-repeat:repeat-x;
+}
+.bgleft03 {
+	background-color: #679004;
+	background-image: url(../images/imgespcd10_l.jpg);
+	background-position: right top;
+}
+.bgleft {
+	background-image: url(../images/imgespcd11_l.jpg);
+	background-position: right top;
+}
+.bg {
+	background-color: #C8F7FF;
+}
+
+.bgright01 {
+	background-color: #C8F7FF;
+	background-image: url(../images/imgespcd06_r.jpg);
+	background-position: left top;
+}
+.bgright02 {
+	background-color: #C8F7FF;
+	background-image: url(../images/imgespcd09_r.jpg);
+	background-position: left bottom;
+	background-repeat:repeat-x;
+}
+.bgright03 {
+	background-color: #679004;
+	background-image: url(../images/imgespcd10_r.jpg);
+	background-position: right top;
+}
+.bgright {
+	background-image: url(../images/imgespcd11_r.jpg);
+	background-position: left top;
+}
+
+.padding01 {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+.padding02 {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.margin01 {
+	margin-top: 7px;
+}
+.copy {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #FFFFFF;
+	padding-left: 0px;
+}
+.smallText {
+	font-size: 10px;
+	font-style: normal;
+	color: #FFFFFF;
+	padding-left: 0px;
+}
+a.more {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFF;
+}
+a.more:hover {
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#000;
+	font-weight: nomal;
+}
+a.mail {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+	color: #FFF;
+}
+a.mail:hover {
+	text-decoration: none;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#699;
+	font-weight: nomal;
+}
+a.titleNews {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #022c4d;
+}
+a.titleNews:hover {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color:#699;
+}
+.head01 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.head02 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FFF;
+}
+.head04 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFF;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.head03 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #082e5e;
+}
+.bgfoot {
+	background-image: url(../images/imgespcd12.jpg);
+	background-repeat: repeat-x;
+	background-position: left bottom;
+}
+
+
+a.btn {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+}
+a.btn:hover {
+	text-decoration: none;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color:#083D5E;
+	font-weight: bold;
+}
+
+.tablebgmain {
+	border: 1px solid #676767;
+	font-size: 12px;
+	color: #000;
+}
+
+div.swlang{
+	position: absolute;
+	right: 0px;
+	margin: 0px auto;
+	width:110px;
+	height:40px;
+	text-align: center;
+}
+
+a img { border:none; vertical-align:top; }
+a { text-decoration:none; }
+.infowindow { overflow: hidden; }

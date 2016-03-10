@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>กรมควบคุมมลพิษ</title>
+<link href="css/textstyle.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet"  href="css/scroller_bar_index.css"></link>
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<link type="text/css" href="css/start/jquery-ui-1.8.5.custom.css" rel="stylesheet" />
+<script type='text/javascript' src='http://www.google.com/jsapi'></script>
+<script language="javascript" type="text/javascript" src="js/selectParamRtReportPublic.js"></script>
+<script language="javascript" type="text/javascript" src="js/selectParamMnReportPublic.js"></script>
+<script type="text/javascript" src="js/function.js"></script>
+<script type="text/javascript" src="jquery/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="jquery/js/jquery-ui-1.8.2.custom.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/tab_station.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#datepicker_start").datepicker({
+		showOn: 'button',
+		dateFormat: 'yy-mm-dd',minDate: '2016-02-01',		buttonImage: 'images/calendar.gif',
+		buttonImageOnly: true,
+		showButtonPanel: true
+	});
+	$("#datepicker_end").datepicker({
+		showOn: 'button',
+		dateFormat: 'yy-mm-dd',minDate: '2016-02-01',		buttonImage: 'images/calendar.gif',
+		buttonImageOnly: true,
+		showButtonPanel: true
+	});
+});
+</script>
+</head>
+
+<body>
+
+<!-- Main MAS Tabs -->
+<h2 class="titleNews">จัดการผลการตรวจวัดข้อมูลประมวลผล</h2>
+<div id="main_mas_stabs">
+  <div id="main_m_tabs-report">
+
+    <form id="manualReportForm">
+      <p>
+        Station:
+      </p>
+
+      <select name="stationId" id="stationId" multiple size="8" onchange="showParamMnReport(this.value, '$dataReportType')">
+        <option value="02t">02t แขวงหิรัญรูจี เขตธนบุรี กรุงเทพ</option>
+        <option value="03t">03t แขวงแสมดำ เขตบางขุนเทียน กรุงเทพ</option>
+        <option value="10t">10t แขวงคลองจั่น เขตบางกะปิ กรุงเทพ</option>
+        <option value="12t">12t แขวงช่องนนทรี เขตยานนาวา กรุงเทพ</option>
+        <option value="13t">13t ต.บางกรวย อ.บางกรวย จ.นนทบุรี</option>
+        <option value="14t">14t ต.อ้อมน้อย อ.กระทุ่มแบน จ.สมุทรสาคร</option>
+        <option value="16t">16t ต.บางโปรง อ.เมือง จ.สมุทรปราการ</option>
+        <option value="17t">17t ต.ตลาด อ.พระประแดง จ.สมุทรปราการ</option>
+        <option value="18t">18t ต.ปากน้ำ อ.เมือง จ.สมุทรปราการ</option>
+        <option value="19t">19t ต.บางเสาธง อ.บางเสาธง จ.สมุทรปราการ</option>
+        <option value="20t">20t ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี</option>
+        <option value="21t">21t ต.ประตูชัย อ.พระนครศรีอยุธยา จ.พระนครศรีอยุธยา</option>
+        <option value="22t">22t ต.บางพูด อ.ปากเกร็ด จ.นนทบุรี</option>
+        <option value="24t">24t ต.หน้าพระลาน อ.เฉลิมพระเกียรติ จ.สระบุรี</option>
+        <option value="25t">25t ต.ปากเพรียว อ.เมือง จ.สระบุรี</option>
+        <option value="26t">26t ต.หน้าเมือง อ.เมือง จ.ราชบุรี</option>
+        <option value="27t">27t ต.มหาชัย อ.เมือง จ.สมุทรสาคร</option>
+        <option value="28t">28t ต.ปลวกแดง, อ.ปลวกแดง, จ.ระยอง</option>
+        <option value="31t">31t ต.ห้วยโป่ง อ.เมือง จ.ระยอง</option>
+        <option value="32t">32t ต.ทุ่งสุขลา อ.ศรีราชา จ.ชลบุรี</option>
+        <option value="33t">33t ต.บ่อวิน อ.ศรีราชา จ.ชลบุรี</option>
+        <option value="34t">34t ต.บ้านสวน อ.เมือง จ.ชลบุรี</option>
+        <option value="35t">35t ต.ช้างเผือก อ.เมือง จ.เชียงใหม่</option>
+        <option value="36t">36t ต.ศรีภูมิ อ.เมือง จ.เชียงใหม่</option>
+        <option value="37t">37t ต.พระบาท อ.เมือง จ.ลำปาง</option>
+        <option value="38t">38t ต.สบป้าด อ.แม่เมาะ จ.ลำปาง</option>
+        <option value="39t">39t ต.บ้านดง อ.แม่เมาะ จ.ลำปาง</option>
+        <option value="40t">40t ต.แม่เมาะ อ.แม่เมาะ จ.ลำปาง</option>
+        <option value="41t">41t ต.ปากน้ำโพ อ.เมือง จ.นครสวรรค์</option>
+        <option value="42t">42t ต.มะขามเตี้ย อ.เมือง จ.สุราษฎร์ธานี</option>
+        <option value="43t">43t ต.ตลาดใหญ่ อ.เมือง จ.ภูเก็ต</option>
+        <option value="44t">44t ต.หาดใหญ่ อ.หาดใหญ่ จ.สงขลา</option>
+        <option value="46t">46t ต.ในเมือง อ.เมือง จ.ขอนแก่น</option>
+        <option value="47t">47t ต.ในเมือง อ.เมือง จ.นครราชสีมา</option>
+        <option value="50t">50t ริมถนนพระรามสี่, เขตปทุมวัน, กรุงเทพ</option>
+        <option value="53t">53t ริมถนนลาดพร้าว เขตวังทองหลาง กรุงเทพ</option>
+        <option value="54t">54t ริมถนนดินแดง เขตดินแดง กรุงเทพ</option>
+        <option value="57t">57t ต.เวียง อ.เมือง จ.เชียงราย</option>
+        <option value="58t">58t ต.จองคำ อ.เมือง จ.แม่ฮ่องสอน</option>
+        <option value="59t">59t แขวงสามเสนใน เขตพญาไท กรุงเทพ</option><option value="60t">60t ต.วังเย็น อ.แปลงยาว จ.ฉะเชิงเทรา</option><option value="61t">61t แขวงพลับพลา เขตวังทองหลาง กรุงเทพ</option><option value="62t">62t ต.บางนาค อ.เมือง จ.นราธิวาส</option><option value="63t">63t ต.สะเตง อ.เมือง จ.ยะลา</option><option value="67t">67t ต.ในเวียง อ.เมือง จ.น่าน</option><option value="68t">68t ต.ในเมือง อ.เมือง จ.ลำพูน</option><option value="69t">69t ต.นาจักร อ.เมือง จ.แพร่</option><option value="70t">70t ต.เวียง อ.เมือง จ.พะเยา</option><option value="71t">71t ต.อรัญประเทศ อ.อรัญประเทศ จ.สระแก้ว</option><option value="72t">72t ต.นาอาน อ.เมือง จ.เลย</option><option value="73t">73t ต.เวียงพางคำ, อ.แม่สาย, จ.เชียงราย</option>
+        <option value="74t">74t ต.เนินพระ อ.เมือง จ.ระยอง</option>
+        <option value="75t">75t ต.ห้วยโก๋น อ.เฉลิมพระเกียรติ จ.น่าน</option>
+        <option value="a29">a29 ต.มาบตาพุด, อ.เมือง, จ.ระยอง</option>
+        <option value="a30">a30 ต.ท่าประดู่, อ.เมือง, จ.ระยอง</option>
+      </select>
+      <div id="latestTablePdata"></div>
+
+      <p>Start Period:
+      <SELECT NAME="startYearMn" id="startYearMn" style="display:none">
+        <OPTION VALUE="2016" SELECTED>2016
+      </SELECT>
+      <select name="startMonthMn" id="startMonthMn" style="display:none">
+        <OPTION VALUE="03" SELECTED>March
+      </SELECT>
+      <input name="startDate" id="datepicker_start" type="text" value="2016-02-01" size="10" disabled>
+      <SELECT NAME="startHour" id="startHour">
+        <OPTION VALUE="00" SELECTED>00
+        <OPTION VALUE="01">01<OPTION VALUE="02">02<OPTION VALUE="03">03<OPTION VALUE="04">04<OPTION VALUE="05">05<OPTION VALUE="06">06<OPTION VALUE="07">07<OPTION VALUE="08">08<OPTION VALUE="09">09<OPTION VALUE="10">10<OPTION VALUE="11">11<OPTION VALUE="12">12<OPTION VALUE="13">13<OPTION VALUE="14">14<OPTION VALUE="15">15<OPTION VALUE="16">16<OPTION VALUE="17">17<OPTION VALUE="18">18<OPTION VALUE="19">19<OPTION VALUE="20">20<OPTION VALUE="21">21<OPTION VALUE="22">22<OPTION VALUE="23">23
+      </SELECT>
+      <SELECT NAME="startMin" id="startMin">
+        <OPTION VALUE="00" SELECTED>00
+        <OPTION VALUE="01">01<OPTION VALUE="02">02<OPTION VALUE="03">03<OPTION VALUE="04">04<OPTION VALUE="05">05<OPTION VALUE="06">06<OPTION VALUE="07">07<OPTION VALUE="08">08<OPTION VALUE="09">09<OPTION VALUE="10">10<OPTION VALUE="11">11<OPTION VALUE="12">12<OPTION VALUE="13">13<OPTION VALUE="14">14<OPTION VALUE="15">15<OPTION VALUE="16">16<OPTION VALUE="17">17<OPTION VALUE="18">18<OPTION VALUE="19">19<OPTION VALUE="20">20<OPTION VALUE="21">21<OPTION VALUE="22">22<OPTION VALUE="23">23<OPTION VALUE="24">24<OPTION VALUE="25">25<OPTION VALUE="26">26<OPTION VALUE="27">27<OPTION VALUE="28">28<OPTION VALUE="29">29<OPTION VALUE="30">30<OPTION VALUE="31">31<OPTION VALUE="32">32<OPTION VALUE="33">33<OPTION VALUE="34">34<OPTION VALUE="35">35<OPTION VALUE="36">36<OPTION VALUE="37">37<OPTION VALUE="38">38<OPTION VALUE="39">39<OPTION VALUE="40">40<OPTION VALUE="41">41<OPTION VALUE="42">42<OPTION VALUE="43">43<OPTION VALUE="44">44<OPTION VALUE="45">45<OPTION VALUE="46">46<OPTION VALUE="47">47<OPTION VALUE="48">48<OPTION VALUE="49">49<OPTION VALUE="50">50<OPTION VALUE="51">51<OPTION VALUE="52">52<OPTION VALUE="53">53<OPTION VALUE="54">54<OPTION VALUE="55">55<OPTION VALUE="56">56<OPTION VALUE="57">57<OPTION VALUE="58">58<OPTION VALUE="59">59
+      </SELECT></p>
+
+      <p>End Period:
+      <SELECT NAME="endYearMn" id="endYearMn" style="display:none">
+        <OPTION VALUE="2016" SELECTED>2016
+      </SELECT>
+      <select name="endMonthMn" id="endMonthMn" style="display:none">
+        <OPTION VALUE="03" SELECTED>March
+      </SELECT>
+      <input name="endDate" id="datepicker_end" type="text" value="2016-03-10" size="10" disabled>
+      <SELECT NAME="endHour" id="endHour">
+        <OPTION VALUE="00">00<OPTION VALUE="01">01<OPTION VALUE="02">02<OPTION VALUE="03">03<OPTION VALUE="04">04<OPTION VALUE="05">05<OPTION VALUE="06">06<OPTION VALUE="07">07<OPTION VALUE="08">08<OPTION VALUE="09">09<OPTION VALUE="10">10<OPTION VALUE="11">11<OPTION VALUE="12">12<OPTION VALUE="13">13<OPTION VALUE="14">14<OPTION VALUE="15">15<OPTION VALUE="16">16<OPTION VALUE="17">17<OPTION VALUE="18" SELECTED>18<OPTION VALUE="19">19<OPTION VALUE="20">20<OPTION VALUE="21">21<OPTION VALUE="22">22<OPTION VALUE="23">23
+      </SELECT>
+      <SELECT NAME="endMin" id="endMin">
+        <OPTION VALUE="00">00
+        <OPTION VALUE="01">01<OPTION VALUE="02">02<OPTION VALUE="03">03<OPTION VALUE="04">04<OPTION VALUE="05">05<OPTION VALUE="06">06<OPTION VALUE="07">07<OPTION VALUE="08">08<OPTION VALUE="09">09<OPTION VALUE="10">10<OPTION VALUE="11">11<OPTION VALUE="12">12<OPTION VALUE="13">13<OPTION VALUE="14">14<OPTION VALUE="15">15<OPTION VALUE="16">16<OPTION VALUE="17">17<OPTION VALUE="18">18<OPTION VALUE="19">19<OPTION VALUE="20">20<OPTION VALUE="21">21<OPTION VALUE="22">22<OPTION VALUE="23">23<OPTION VALUE="24">24<OPTION VALUE="25">25<OPTION VALUE="26">26<OPTION VALUE="27">27<OPTION VALUE="28">28<OPTION VALUE="29">29<OPTION VALUE="30">30<OPTION VALUE="31">31<OPTION VALUE="32">32<OPTION VALUE="33">33<OPTION VALUE="34">34<OPTION VALUE="35">35<OPTION VALUE="36">36<OPTION VALUE="37">37<OPTION VALUE="38" SELECTED>38<OPTION VALUE="39">39<OPTION VALUE="40">40<OPTION VALUE="41">41<OPTION VALUE="42">42<OPTION VALUE="43">43<OPTION VALUE="44">44<OPTION VALUE="45">45<OPTION VALUE="46">46<OPTION VALUE="47">47<OPTION VALUE="48">48<OPTION VALUE="49">49<OPTION VALUE="50">50<OPTION VALUE="51">51<OPTION VALUE="52">52<OPTION VALUE="53">53<OPTION VALUE="54">54<OPTION VALUE="55">55<OPTION VALUE="56">56<OPTION VALUE="57">57<OPTION VALUE="58">58<OPTION VALUE="59">59
+      </SELECT></p>
+
+      <div id="parameterDiv">Parameter:<br>
+        <select name="parameterSelected[]" size="10" multiple id="parameterSelected" onclick="resetPageNumberMn();">
+          <option value="CO">CO</option>
+          <option value="NO">NO</option>
+          <option value="NO2">NO2</option>
+          <option value="NOX">NOX</option>
+          <option value="SO2">SO2</option>
+          <option value="O3">O3</option>
+          <option value="PM10">PM10</option>
+          <option value="WS">WS</option>
+          <option value="WD">WD</option>
+          <option value="TEMP">TEMP</option>
+          <option value="RH">RH</option>
+          <option value="BP">BP</option>
+          <option value="SRAD">SRAD</option>
+          <option value="NRAD">NRAD</option>
+          <option value="RAIN">RAIN</option>
+          <option value="SD">SD</option>
+        </select>
+      </div>
+
+      <div id="table_mn_div"></div>
+      <div align="left" id="graphMnTableDiv"></div>
+      <div id="table_mn_summary_div"></div>
+
+    </form>
+
+  </div>
+</div>
+
+</body>
+</html>
