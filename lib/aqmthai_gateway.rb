@@ -9,8 +9,10 @@ class AqmthaiGateway
     browser.find_element(:name, 'stationId').send_key('36t')
     sleep 2
     browser.find_element(:id, 'parameterSelected').send_key('PM2.5')
-    browser.execute_script("document.getElementsByName('startDate')[0].removeAttribute('disabled')")
-    browser.execute_script("document.getElementsByName('endDate')[0].removeAttribute('disabled')")
+    browser.execute_script("document.getElementsByName('startDate')[0]" \
+                           ".removeAttribute('disabled')")
+    browser.execute_script("document.getElementsByName('endDate')[0]" \
+                           ".removeAttribute('disabled')")
 
     browser.find_element(:name, 'startDate').clear
     browser.find_element(:name, 'startDate').send_keys(start_date)
@@ -25,13 +27,5 @@ class AqmthaiGateway
     result = browser.find_element(:class, 'google-visualization-table-table').text
     browser.quit
     result.split("\n").map(&:strip)
-  end
-
-  def parameters(station_id:)
-    page = agent.post(
-      "http://aqmthai.com/includes/getManReport.php",
-      { stationId: station_id, action: 'getParamList' }
-    )
-    page.search('option').map(&:text)
   end
 end
