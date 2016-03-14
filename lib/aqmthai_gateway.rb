@@ -24,9 +24,9 @@ class AqmthaiGateway
 
     browser.find_element(:name, 'bt_show_table').click
     sleep 2
-    result = browser.find_element(:class, 'google-visualization-table-table')
+    summary = browser.find_element(:class, 'google-visualization-table-table')
                     .text
     browser.quit
-    result.split("\n").map(&:strip)
+    summary.split("\n").map(&:strip)
   end
 end
