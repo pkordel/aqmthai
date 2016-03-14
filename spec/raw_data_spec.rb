@@ -1,11 +1,13 @@
-require_relative '../lib/aqicm_gateway'
+require_relative '../lib/aqmthai_gateway'
 
-RSpec.describe AqicmGateway do
+RSpec.describe AqmthaiGateway do
   subject { described_class.new }
 
   describe '.raw_data' do
     it 'is successful' do
-      expect(subject.raw_data.first).to eq('Summary 36t_PM2.5 (ug/m3)')
+      result = subject.raw_data(start_date: '2016-02-01',
+                                end_date: '2016-02-29')
+      expect(result.first).to eq('Summary 36t_PM2.5 (ug/m3)')
     end
   end
 end
